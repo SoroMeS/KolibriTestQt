@@ -100,4 +100,9 @@ void MainWindow::on_InputPath_textChanged(const QString &arg1)
     ui->comboBox->setEnabled(false); //нельзя делать копии если мы ещё не создали файл
 }
 
-
+void MainWindow::on_ByteInput_textEdited(const QString &arg1)
+{
+    count = 1;
+    ui->comboBox->setCurrentIndex(0);
+    ui->comboBox->setEnabled(false); //нельзя делать копии если мы поменяли байты кодировки
+}
