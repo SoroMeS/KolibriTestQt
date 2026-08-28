@@ -38,7 +38,7 @@ private slots:
 
     void on_InputPath_textChanged(const QString &arg1);
 
-    void on_ByteInput_valueChanged(int arg1);
+    void on_ByteInput_textEdited(const QString &arg1);
 
 private:
     Ui::MainWindow *ui;
